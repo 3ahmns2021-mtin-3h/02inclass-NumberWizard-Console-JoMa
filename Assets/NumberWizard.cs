@@ -7,7 +7,7 @@ public class NumberWizard : MonoBehaviour
 {
     public Text value;
     public GameObject[] gameButtons;
-    public GameObject newGame;
+    public GameObject refresh;
 
     int min, max, guess;
 
@@ -34,7 +34,8 @@ public class NumberWizard : MonoBehaviour
         {
             button.SetActive(false);
         }
-        newGame.SetActive(true);
+
+        refresh.SetActive(true);
     }
 
     void Guess()
@@ -53,6 +54,7 @@ public class NumberWizard : MonoBehaviour
         {
             button.SetActive(true);
         }
-        newGame.SetActive(false);
+
+        refresh.SetActive(false);
     }
 }
